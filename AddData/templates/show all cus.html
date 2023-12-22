@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+      <ul>
+          {% for customer in customers %}
+              <li>
+                  <b>customer.MaK:{{customer.MaK}}</b> - {{ customer.TenK }}, {{ customer.SDT }},  {{customer.Date_of_birth}}, {{ customer.Address }}
+              </li>
+          {% endfor %}
+      </ul>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+<body>
+<center>
+    <img src="{{url_for('static', filename='store.png')}}" width="500"></img>
+</center>
+<h1 style="color: orangered; text-align: center; font-size: 80px">Welcome to E-Store</h1>
+
+
+<div class="box box-1">
+    <h2 style="color: green">User operations</h2>
+    <!-- <h4 style="color: green" >I. CUSTOMER and ORDER ITEMS</h4> -->
+    <a style="text-decoration: none" href="{{ url_for('showItem') }}">1.1 Show all Items</a></br>
+    <a style="text-decoration: none" href="{{ url_for('addCustomer') }}">1.2 Add Customer</a></br>
+    <a style="text-decoration: none" href="{{ url_for('updateCustomer') }}">1.3 Update Customer</a></br>
+    <a style="text-decoration: none" href="{{ url_for('showCustomer') }}">1.4 Show all Customer</a></br>
+    <a style="text-decoration: none" href="{{ url_for('orderItem') }}">1.5 Order Items</a></br>
+</div>
+<style>
+    .box-1{
+        position: relative; 
+        left: 100px;
+    }
+    .box-2{
+        position: relative;
+        bottom: 158px;
+        left: 450px;
+    }
+    .box-3{
+        position: relative;
+        left: 850px;
+        bottom: 318px;
+    }
+    .box-4{
+        position: relative;
+        left: 1200px;
+        bottom: 458px;
+    }
+</style>
+<div class="box box-2">
+    <h2 style="color: orange">Manager operations</h2>
+    <!-- <h4 style="color: orange">II. ITEM</h4> -->
+    <a style="text-decoration: none" href="{{ url_for('showItem') }}">1.1 Show all Items</a></br>
+    <a style="text-decoration: none" href="{{ url_for('addItem') }}">2.1 Add Items</a></br>
+    <a style="text-decoration: none" href="{{ url_for('updateItem') }}">2.2 Update Items</a></br>
+    <a style="text-decoration: none" href="{{ url_for('delCustomer') }}">2.3 Delete Customer</a></br>
+    <a style="text-decoration: none" href="{{ url_for('delItem') }}">2.4 Delete Items</a></br>
+</div>
+
+
+<div class="box box-3">
+    <h2 style="color: cornflowerblue">Store staff manager</h2>
+    <!-- <h4 style="color: cornflowerblue">III. STAFF</h4> -->
+    <a style="text-decoration: none" href="{{ url_for('addStaff') }}">3.1 Add Staff</a></br>
+    <a style="text-decoration: none" href="{{ url_for('delStaff') }}">3.2 Delete Staff</a></br>
+    <a style="text-decoration: none" href="{{ url_for('updateStaff') }}">3.3 Update Staff</a></br>
+    <a style="text-decoration: none" href="{{ url_for('showStaff') }}">3.4 Show all Staff</a></br>
+</div>
+
+
+<div class="box box-4">
+    <h2 style="color: sienna">Report management</h2>
+    <!-- <h4 style="color: sienna">IV. REPORT</h4> -->
+    <a style="text-decoration: none" href="{{ url_for('addReport') }}">4.1 Add Report</a></br>
+    <a style="text-decoration: none" href="{{ url_for('delReport') }}">4.2 Delete Report</a></br>
+    <a style="text-decoration: none" href="{{ url_for('updateReport') }}">4.3 Update Report</a></br>
+</div>
+
+</body>
+</html>

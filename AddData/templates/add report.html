@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1>ADD REPORT<h1>
+        <form action="{{ url_for('addReportSuccess') }}" method="get">
+            <input type="text" name="STT" placeholder="Enter số thứ tự">
+            <input type="text" name="Pay" placeholder="Enter lương">
+            <input type="text" name="MaNv" placeholder="Enter mã nv">
+            <input type="text" name="Working_house" placeholder="Enter số giờ làm việc">
+            <input type="text" name="Shift" placeholder="Enter ca làm việc">
+            <button>Add Report</button>
+        </form>
+    </body>
+</html>

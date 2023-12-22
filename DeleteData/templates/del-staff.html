@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1 style="color: deeppink">DELETE ITEMS</h1>
+        <form action="{{ url_for('delStaffSuccess') }}" method="get">
+            <input type="text" name="MaNv" placeholder="Enter mã nhân viên">
+            <button>Delete Staff</button>
+        </form>
+    </body>
+</html>

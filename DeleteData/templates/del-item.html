@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1 style="color:red">DELETE ITEMS</h1>
+        <form action="{{ url_for('delItemSuccess') }}" method="get">
+            <input type="text" name="MaH" placeholder="Enter Item code">
+            <button>DEL Items</button>
+        </form>
+    </body>
+</html>

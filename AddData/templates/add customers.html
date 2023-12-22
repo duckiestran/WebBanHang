@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1 style="color:greenyellow">ADD CUSTOMERS</h1>
+        <form action="{{ url_for('addCustomerSuccess') }}" method="get">
+            <input type="text" name="MaK" placeholder="Enter customer code">
+            <input type="text" name="TenK" placeholder="Enter customer name">
+            <input type="text" name="SDT" placeholder="Enter your phone number">
+            <input type="text" name="Date_of_birth" placeholder="Enter date of birth">
+            <input type="text" name="Address" placeholder="Enter address">
+            <button>Add customers</button>
+        </form>
+    </body>
+</html>

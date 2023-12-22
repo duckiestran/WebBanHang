@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1 style="color: coral">ORDER ITEMS</h1>
+            <form action="{{ url_for('orderItemSuccess') }}" method="get">
+                <input type="text" name="SoHD" placeholder="Nhập số hóa đơn">
+                <input type="text" name="Ngay_HD" placeholder="Nhập ngày hóa đơn">
+                <input type="text" name="MaK" placeholder="Nhập mã khách">
+                <input type="text" name="MaH" placeholder="Nhập mã hàng">
+                <input type="text" name="Note" placeholder="Nhập ghi chú">
+                <button>Order Items</button>
+            </form>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+      <ul>
+          {% for item in items %}
+              <li>
+                  <b>item.MaH:{{item.MaH}}</b> - {{ item.TenH }}, {{ item.Gia }},  {{item.Made_in}}, {{ item.Note }}
+              </li>
+          {% endfor %}
+      </ul>
+    </body>
+</html>

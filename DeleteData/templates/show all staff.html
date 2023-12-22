@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+      <ul>
+          {% for s in staff %}
+              <li>
+                  <b>s.MaNv:{{s.MaNv}}</b> - {{ s.TenNv }}, {{ s.SLBan }},  {{s.Luong}}
+              </li>
+          {% endfor %}
+      </ul>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1>UPDATE EMPLOYEE<h1>
+        <form action="{{ url_for('updateItemSuccess') }}" method="get">
+            <input type="text" name="MaH" placeholder="Enter item code">
+            <input type="text" name="TenH" placeholder="Enter item name">
+            <input type="text" name="Gia" placeholder="Enter item price">
+            <input type="text" name="Made_in" placeholder="Enter made in">
+            <input type="text" name="Note" placeholder="Enter note">
+            <button>Update Staff</button>
+        </form>
+    </body>
+</html>

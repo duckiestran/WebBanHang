@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1>ADD EMPLOYEES<h1>
+        <form action="{{ url_for('addStaffSuccess') }}" method="get">
+            <input type="text" name="MaNv" placeholder="Enter employee code">
+            <input type="text" name="TenNv" placeholder="Enter employee name">
+            <input type="text" name="Date_of_birth" placeholder="Enter Date_of_birth">
+            <input type="text" name="Gender" placeholder="Enter Gender">
+            <input type="text" name="SDT" placeholder="Enter your phone number">
+            <button>Add staff</button>
+        </form>
+    </body>
+</html>
